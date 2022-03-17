@@ -146,7 +146,7 @@ body main .faq h1 {
 }
 
 body main .faq .questions {
-  margin-top: 17px;
+  padding: 17px 0;
 }
 
 body main .faq .questions .question {
@@ -169,6 +169,7 @@ body main .faq .questions .question .text h2 {
   color: #1d1e35;
   -webkit-transition: .2s;
   transition: .2s;
+  cursor: pointer;
 }
 
 body main .faq .questions .question .text h2:hover {

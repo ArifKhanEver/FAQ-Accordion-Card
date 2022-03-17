@@ -111,7 +111,7 @@ body {
                 }
             }
             .questions {
-                margin-top: 17px;         
+                padding: 17px 0;         
                 .question {
                     display: flex;
                     justify-content: space-between;
@@ -123,6 +123,7 @@ body {
                             padding: 17px 0 10px;
                             color: $veryDarkDesaturatedBlue;
                             transition: .2s;
+                            cursor: pointer;
                             &:hover {
                                 color: $softRed;
                             }
