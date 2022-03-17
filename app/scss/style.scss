@@ -29,6 +29,7 @@ body {
     font-size: 12px;
     background-image: linear-gradient(180deg, $softViolet, $softBlue);
     background-repeat: no-repeat;
+    min-height: 100vh;
     main {
         display: flex;
         flex-direction: column;
@@ -145,6 +146,7 @@ body {
                     .arrow {
                         width: 28px;
                         padding: 18px 0;
+                        cursor: pointer;
                     }
                     .rotate {
                         img {
