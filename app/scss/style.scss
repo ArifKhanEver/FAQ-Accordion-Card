@@ -1,0 +1,162 @@
+$veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+html {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+h1,h2,p,body,hr {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-image: linear-gradient(180deg, $softViolet, $softBlue);
+    background-repeat: no-repeat;
+    main {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 5px 39px 45px -11px rgba(0, 0, 0, 0.34);
+        margin: 150px auto 85px;
+        width: 330px;
+        @media screen and (min-width: 950px) {
+            width: 920px;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin: 128px auto; 
+            
+        }
+
+        .image {
+            height: 510px;
+            position: relative;
+            background-image: url(../../images/bg-pattern-desktop.svg);
+            background-size: contain;
+            background-size: 210%;
+            background-position: -576px -294px;
+            background-repeat: no-repeat;
+            min-width: 50%;
+            @media screen and (max-width: 950px) {                
+                height: 137px;
+                background-size: 74%;
+                background-position: 46px -134px;
+                background-repeat: no-repeat
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(../../images/illustration-woman-online-desktop.svg);
+                background-repeat: no-repeat;
+                display: inline-block;
+                background-size: 100%;
+                background-position: 0px 0px;
+                top: -109px;
+                left: 46px;;
+                height: 245px;
+                width: 240px;
+                @media screen and (min-width: 950px) {                    
+                    background-size: 80%;
+                    background-position: -88px 0px;
+                    top: 0;
+                    left: 0;
+                    height: 80%;
+                    width: 130%;
+                    margin-top: 70px;
+                }
+            }
+            img {
+                position: relative;
+                @media screen and (max-width: 950px) {                    
+                    left: 43px;
+                    top: -38px;
+                    width: 27%;
+                }
+                left: -91px;
+                top: 205px;                
+            }
+        }
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            @media screen and (max-width: 950px) {
+                margin: 0 24px 50px;
+            }
+            margin: 67px 75px 0 0;
+            h1 {
+                font-size: 32px;
+                text-align: center;
+                @media screen and (min-width: 950px) {
+                    text-align: left;
+                }
+            }
+            .questions {
+                margin-top: 17px;         
+                .question {
+                    display: flex;
+                    justify-content: space-between;
+                    .text {
+                        width: 328px;
+                        h2 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            padding: 17px 0 10px;
+                            color: $veryDarkDesaturatedBlue;
+                            transition: .2s;
+                            &:hover {
+                                color: $softRed;
+                            }
+                        }
+                        .bold {
+                            font-weight: 700;
+                        }
+                        p {
+                            margin-bottom: 18px;
+                            font-size: inherit;
+                            line-height: 1.5;
+                            display: none;            color: $darkGrayishBlue;           
+                        }
+
+                        .show {
+                            display: block;
+                        }
+                    }
+                    .arrow {
+                        width: 28px;
+                        padding: 18px 0;
+                    }
+                    .rotate {
+                        img {
+                            transform:rotateX(180deg)
+                        }
+                    }
+                }
+                hr {
+                    border-top: 1px solid hsl(240, 5%, 91%);
+                    border-bottom: none;
+                }
+            }
+
+        }
+    }
+}

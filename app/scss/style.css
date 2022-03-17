@@ -1,0 +1,208 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, p, body, hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(180deg, #af67e9, #6565e7);
+  background-repeat: no-repeat;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 39px 45px -11px rgba(0, 0, 0, 0.34);
+          box-shadow: 5px 39px 45px -11px rgba(0, 0, 0, 0.34);
+  margin: 150px auto 85px;
+  width: 330px;
+}
+
+@media screen and (min-width: 950px) {
+  body main {
+    width: 920px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+    margin: 128px auto;
+  }
+}
+
+body main .image {
+  height: 510px;
+  position: relative;
+  background-image: url(../../images/bg-pattern-desktop.svg);
+  background-size: contain;
+  background-size: 210%;
+  background-position: -576px -294px;
+  background-repeat: no-repeat;
+  min-width: 50%;
+}
+
+@media screen and (max-width: 950px) {
+  body main .image {
+    height: 137px;
+    background-size: 74%;
+    background-position: 46px -134px;
+    background-repeat: no-repeat;
+  }
+}
+
+body main .image::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  background-position: 0px 0px;
+  top: -109px;
+  left: 46px;
+  height: 245px;
+  width: 240px;
+}
+
+@media screen and (min-width: 950px) {
+  body main .image::before {
+    background-size: 80%;
+    background-position: -88px 0px;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 130%;
+    margin-top: 70px;
+  }
+}
+
+body main .image img {
+  position: relative;
+  left: -91px;
+  top: 205px;
+}
+
+@media screen and (max-width: 950px) {
+  body main .image img {
+    left: 43px;
+    top: -38px;
+    width: 27%;
+  }
+}
+
+body main .faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 67px 75px 0 0;
+}
+
+@media screen and (max-width: 950px) {
+  body main .faq {
+    margin: 0 24px 50px;
+  }
+}
+
+body main .faq h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+  body main .faq h1 {
+    text-align: left;
+  }
+}
+
+body main .faq .questions {
+  margin-top: 17px;
+}
+
+body main .faq .questions .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .faq .questions .question .text {
+  width: 328px;
+}
+
+body main .faq .questions .question .text h2 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 17px 0 10px;
+  color: #1d1e35;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body main .faq .questions .question .text h2:hover {
+  color: #f47c57;
+}
+
+body main .faq .questions .question .text .bold {
+  font-weight: 700;
+}
+
+body main .faq .questions .question .text p {
+  margin-bottom: 18px;
+  font-size: inherit;
+  line-height: 1.5;
+  display: none;
+  color: #787887;
+}
+
+body main .faq .questions .question .text .show {
+  display: block;
+}
+
+body main .faq .questions .question .arrow {
+  width: 28px;
+  padding: 18px 0;
+}
+
+body main .faq .questions .question .rotate img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+body main .faq .questions hr {
+  border-top: 1px solid #e7e7e9;
+  border-bottom: none;
+}
+/*# sourceMappingURL=style.css.map */
